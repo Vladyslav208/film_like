@@ -1,0 +1,50 @@
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="weather-box">
+
+    <h1>Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Введіть місто...">
+      <button onclick="searchWeather()">➤</button>
+    </div>
+
+    <div class="card">
+      <div class="city" id="city">Kyiv</div>
+      <div class="weather" id="weather">Clear Sky</div>
+
+      <div class="temp" id="temp">25°</div>
+
+      <div class="info">
+
+        <div>
+          <div class="label">Вологість</div>
+          <div class="value" id="humidity">60%</div>
+        </div>
+
+        <div>
+          <div class="label">Вітер</div>
+          <div class="value" id="wind">12 km/h</div>
+        </div>
+
+        <div>
+          <div class="label">Видимість</div>
+          <div class="value" id="visibility">10 km</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
